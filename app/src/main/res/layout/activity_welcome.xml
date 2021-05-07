@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white3"
+    android:orientation="vertical"
+    tools:context=".welcome">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen220"
+        android:src="@drawable/ic_get_start_timitory"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/teks1_halaman1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monitory Membantu Anda"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/sp25"
+        android:textStyle="bold"
+        android:textColor="@color/black3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/teks2_halaman1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/teks1_halaman1"
+        android:text="Mengontrol HP Anak"
+        android:textSize="@dimen/sp25"
+        android:textStyle="bold"
+        android:textColor="@color/black3"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/layout_bawah_halaman1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        tools:ignore="MissingConstraints" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_mulai"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Mulai"
+            android:textStyle="bold"
+            android:textColor="@color/black3"
+            android:onClick="PindahToLogin"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
